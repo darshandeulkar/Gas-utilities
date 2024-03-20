@@ -20,10 +20,10 @@ def login(request):
         if user is not None:
             login(request, user)
             # request.session['Stud_id'] = user.userinfo.Stud_id
-            return render(request, 'index.html')
+            return render(request, 'login.html')
         else:
             # messages.error(request, 'valid username or password')
-            return render (request,'login.html')
+            return render (request,'index.html')
         
 
 def register(request):
